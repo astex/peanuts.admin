@@ -1,0 +1,33 @@
+<div class='registration'>
+  Please register your first admin user:
+  <form class='pure-form pure-form-aligned'>
+    <fieldset>
+      <div class='pure-control-group'>
+        <label for='email'>Email</label>
+        <input id='email' type='text' placeholder='Email'>
+      </div>
+      <div class='pure-control-group'>
+        <label for='username'>Username</label>
+        <input id='username' type='text' placeholder='Username'>
+        (optional)
+      </div>
+      <div class='pure-control-group'>
+        <label for='password'>Password</label>
+        <input id='password' type='password' placeholder='Password'>
+      </div>
+      <div class='pure-control-group'>
+        <label for='confirm'>Confirm password</label>
+        <input id='confirm' type='password' placeholder='Confirm password'>
+      </div>
+      <div class='pure-controls'>
+        <label for='remember' class='pure-checkbox'>
+          <input id='remember' type='checkbox'>
+          Remember me
+        </label>
+        <button type='submit' class='pure-button pure-button-primary'>
+          Register
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</div>
