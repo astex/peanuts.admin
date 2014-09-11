@@ -9,7 +9,8 @@ require.config({
     'underscore': 'lib/underscore',
     'backbone': 'lib/backbone',
     'require-css': 'lib/require-css.min',
-    'pure': '//yui.yahooapis.com/pure/0.5.0/pure-min'
+    'pure': '//yui.yahooapis.com/pure/0.5.0/pure-min',
+    'require-text': 'lib/require-text'
   },
   shim: {
     jquery: {
@@ -25,7 +26,8 @@ require.config({
   },
   map: {
     '*': {
-      'css': 'require-css'
+      'css': 'require-css',
+      'text': 'require-text'
     }
   }
 });
@@ -41,6 +43,12 @@ require(['jquery', 'backbone', 'css!pure'], function($, Backbone) {
 
         require([controllerFile], function(controller) {
           router.view = controller();
+          router.view.render();
+
+          $(document).prop(
+            'title',
+            $(document).prop('title') + ' - ' + router.view.title
+          );
         });
       },
       firstUse: function() {
