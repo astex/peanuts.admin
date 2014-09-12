@@ -9,8 +9,9 @@ require.config({
     'underscore': 'lib/underscore',
     'backbone': 'lib/backbone',
     'require-css': 'lib/require-css.min',
-    'pure': '//yui.yahooapis.com/pure/0.5.0/pure-min',
-    'require-text': 'lib/require-text'
+    'require-text': 'lib/require-text',
+    'pure-min': '//yui.yahooapis.com/pure/0.5.0/pure-min',
+    'pure-responsive': '//yui.yahooapis.com/pure/0.5.0/grids-responsive-min'
   },
   shim: {
     jquery: {
@@ -32,7 +33,13 @@ require.config({
   }
 });
 
-require(['jquery', 'backbone', 'css!pure'], function($, Backbone) {
+require(
+  [
+    'jquery',
+    'backbone',
+    'css!pure-min',
+    'css!pure-responsive'
+  ], function($, Backbone) {
   var
     add_app_header = function(xhr) {
       xhr.setRequestHeader(
