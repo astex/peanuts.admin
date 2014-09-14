@@ -1,0 +1,8 @@
+<div class='notification <%= notification.class %>'>
+  <% if (notification.data) { %>
+    <b><%= notification.data.status %></b>
+    <%= notification.data.message %>
+  <% } else { %>
+    <%= notification.text %>
+  <% } %>
+</div>

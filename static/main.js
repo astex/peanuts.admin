@@ -38,7 +38,8 @@ require(
     'jquery',
     'backbone',
     'css!pure-min',
-    'css!pure-responsive'
+    'css!pure-responsive',
+    'css!styles/base'
   ], function($, Backbone) {
   var
     add_app_header = function(xhr) {
