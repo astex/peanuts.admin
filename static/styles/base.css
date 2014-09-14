@@ -1,0 +1,18 @@
+/* Some simple components. */
+
+.notification {
+  display: block;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #688;
+  background-color: #dee;
+  color: #688;
+}
+
+.notification.error {
+  border-color: #d33;
+  background-color: #fdd;
+  color: #d33;
+}
