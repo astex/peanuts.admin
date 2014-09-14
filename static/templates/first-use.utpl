@@ -28,7 +28,11 @@
               <input id='remember' type='checkbox'>
               Remember me
             </label>
-            <button type='button' class='pure-button pure-button-primary'>
+            <button
+              type='button'
+              id='register'
+              class='pure-button pure-button-primary'
+              >
               Register
             </button>
           </div>
