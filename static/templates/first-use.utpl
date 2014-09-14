@@ -24,6 +24,7 @@
             <input id='confirm' type='password' placeholder='Confirm password'>
           </div>
           <div class='pure-controls'>
+            <div class='notifier'></div>
             <label for='remember' class='pure-checkbox'>
               <input id='remember' type='checkbox'>
               Remember me
