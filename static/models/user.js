@@ -1,9 +1,8 @@
-define(['backbone'], function(Backbone) {
+define(['models/base'], function(BaseModels) {
   var Models = {url: '/api/user/'};
 
-  Models.User = Backbone.Model.extend({
-    url: function() { return Models.url + (this.id || ''); },
-    parse: function(data) { return data.data; }
+  Models.User = BaseModels.Model.extend({
+    baseUrl: Models.url
   });
 
   return Models;
